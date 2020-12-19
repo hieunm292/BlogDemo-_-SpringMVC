@@ -65,7 +65,7 @@ public class NewController {
 		ModelAndView mav = new ModelAndView("admin/new/edit");
 
 		NewDTO model=new NewDTO();
-		if (id != null) {
+		if (id != null) { //cap nhat bai viet
 			model = newService.findById(id);
 		}
 		if(request.getParameter("message")!=null){

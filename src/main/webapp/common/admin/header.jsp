@@ -9,7 +9,7 @@
             <a href="#" class="navbar-brand">
                 <small>
                     <i class="fa fa-leaf"></i>
-                    Trang quản trị
+                    ADMIN PAGE
                 </small>
             </a>
         </div>
@@ -17,7 +17,7 @@
             <ul class="nav ace-nav">
                 <li class="light-blue dropdown-modal">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        Xin chào, <%=SecurityUtils.getPrincipal().getFullName()%>
+                        Xin chào Bo$$ <%=SecurityUtils.getPrincipal().getFullName()%>
                     </a>
                     <li class="light-blue dropdown-modal">
                         <a href='<c:url value='/thoat'/>'>

@@ -34,7 +34,7 @@ public class NewService implements INewService {
 		List<NewEntity> entities = newRepository.findAll(pageable).getContent();
 		//convert data tu dto qua entity
 		for (NewEntity item: entities) {
-			NewDTO newDTO = newConverter.toDto(item);
+			NewDTO newDTO = newConverter.toDto(item); //convert qua entity va add vao models
 			models.add(newDTO);
 		}
 		return models;
@@ -50,12 +50,33 @@ public class NewService implements INewService {
 		NewEntity entity = newRepository.findOne(id);
 		return newConverter.toDto(entity);
 	}
-	
+
+//	@Override
+//	@Transactional
+//	public NewDTO insert(NewDTO newDTO) {
+//		CategoryEntity category=categoryRepository.findOneByCode(newDTO.getCategoryId());
+//		NewEntity newEntity=newConverter.toEntity(newDTO);
+//		newEntity.setCategory(category);
+//		newEntity=newRepository.save(newEntity);
+//		return newConverter.toDto(newEntity);
+//	}
+//
+//	@Override
+//	@Transactional
+//	public NewDTO update(NewDTO updateNew) {
+//		NewEntity oldNew=newRepository.findOne(updateNew.getId());
+//		CategoryEntity category=categoryRepository.findOneByCode(updateNew.getCategoryId());
+//		oldNew.setCategory(category);
+//		NewEntity updateNewFromNewBefore=newConverter.toEntity(oldNew,updateNew);
+//		return newConverter.toDto(newRepository.save(updateNewFromNewBefore));
+//	}
+
 	@Override
 	@Transactional
 	public NewDTO save(NewDTO dto) {
 		CategoryEntity category = categoryRepository.findOneByCode(dto.getCategoryCode());
 		NewEntity newEntity = new NewEntity();
+		//insert == id== null/ update == id != null
 		if (dto.getId() != null) {
 			NewEntity oldNew = newRepository.findOne(dto.getId());
 			oldNew.setCategory(category);

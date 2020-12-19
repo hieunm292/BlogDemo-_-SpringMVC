@@ -8,6 +8,7 @@ import com.nmhieu292.entity.NewEntity;
 @Component
 public class NewConverter {
 
+	//convert tu entity qua DTO
 	public NewDTO toDto(NewEntity entity) {
 		NewDTO result = new NewDTO();
 		result.setId(entity.getId());
@@ -18,7 +19,9 @@ public class NewConverter {
 		result.setCategoryCode(entity.getCategory().getCode());
 		return result;
 	}
-	
+
+	//convert tu DTO qua entity
+	//toEntity convert qua 1 entity hoan toan moi
 	public NewEntity toEntity(NewDTO dto) {
 		NewEntity result = new NewEntity();
 		result.setTitle(dto.getTitle());
@@ -27,7 +30,7 @@ public class NewConverter {
 		result.setThumbnail(dto.getThumbnail());
 		return result;
 	}
-	
+	//toEntity tra ve dua tren 1 entity da co truoc de update trong NewService
 	public NewEntity toEntity(NewEntity result, NewDTO dto) {
 		result.setTitle(dto.getTitle());
 		result.setShortDescription(dto.getShortDescription());

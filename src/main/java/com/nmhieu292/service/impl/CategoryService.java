@@ -31,7 +31,6 @@ public class CategoryService implements ICategoryService {
 //                CategoryDTO dto= categoryConverter.toDto(items);
 //                result.add(dto);
                 result.put(items.getCode(),items.getName());
-
             }
             return result;
 
