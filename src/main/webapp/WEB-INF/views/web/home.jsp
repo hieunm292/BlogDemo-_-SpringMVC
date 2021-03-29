@@ -6,96 +6,78 @@
 
 <head>
 
-<meta charset="UTF-8">
-<title>Trang chủ</title>
+	<meta charset="UTF-8">
+	<title>Trang chủ</title>
 
 </head>
 
 <body>
 
-	<!-- Page Content -->
-	<div class="container">
-
-		<!-- Heading Row -->
-		<div class="row align-items-center my-5">
-			<div class="col-lg-7">
-				<img class="img-fluid rounded mb-4 mb-lg-0"
-					src="http://placehold.it/900x400" alt="">
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-md-10 mx-auto">
+			<div class="post-preview">
+				<a href="post.html">
+					<h2 class="post-title">
+						Man must explore, and this is exploration at its greatest
+					</h2>
+					<h3 class="post-subtitle">
+						Problems look mighty small from 150 miles up
+					</h3>
+				</a>
+				<p class="post-meta">Posted by
+					<a href="#">Start Bootstrap</a>
+					on September 24, 2019</p>
 			</div>
-			<!-- /.col-lg-8 -->
-			<div class="col-lg-5">
-				<h1 class="font-weight-light">Business Name or Tagline</h1>
-				<p>This is a template that is great for small businesses. It
-					doesn't have too much fancy flare to it, but it makes a great use
-					of the standard Bootstrap core components. Feel free to use this
-					template for any project you want!</p>
-				<a class="btn btn-primary" href="#">Call to Action!</a>
+			<hr>
+			<div class="post-preview">
+				<a href="post.html">
+					<h2 class="post-title">
+						I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.
+					</h2>
+				</a>
+				<p class="post-meta">Posted by
+					<a href="#">Start Bootstrap</a>
+					on September 18, 2019</p>
 			</div>
-			<!-- /.col-md-4 -->
+			<hr>
+			<div class="post-preview">
+				<a href="post.html">
+					<h2 class="post-title">
+						Science has not yet mastered prophecy
+					</h2>
+					<h3 class="post-subtitle">
+						We predict too much for the next year and yet far too little for the next ten.
+					</h3>
+				</a>
+				<p class="post-meta">Posted by
+					<a href="#">Start Bootstrap</a>
+					on August 24, 2019</p>
+			</div>
+			<hr>
+			<div class="post-preview">
+				<a href="post.html">
+					<h2 class="post-title">
+						Failure is not an option
+					</h2>
+					<h3 class="post-subtitle">
+						Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+					</h3>
+				</a>
+				<p class="post-meta">Posted by
+					<a href="#">Start Bootstrap</a>
+					on July 8, 2019</p>
+			</div>
+			<hr>
+			<!-- Pager -->
+			<div class="clearfix">
+				<a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+			</div>
 		</div>
-		<!-- /.row -->
-
-		<!-- Call to Action Well -->
-		<div class="card text-white bg-secondary my-5 py-4 text-center">
-			<div class="card-body">
-				<p class="text-white m-0">This call to action card is a great
-					place to showcase some important information or display a clever
-					tagline!</p>
-			</div>
-		</div>
-
-		<!-- Content Row -->
-		<div class="row">
-			<div class="col-md-4 mb-5">
-				<div class="card h-100">
-					<div class="card-body">
-						<h2 class="card-title">Card One</h2>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Rem magni quas ex numquam, maxime minus quam
-							molestias corporis quod, ea minima accusamus.</p>
-					</div>
-					<div class="card-footer">
-						<a href="#" class="btn btn-primary btn-sm">More Info</a>
-					</div>
-				</div>
-			</div>
-			<!-- /.col-md-4 -->
-			<div class="col-md-4 mb-5">
-				<div class="card h-100">
-					<div class="card-body">
-						<h2 class="card-title">Card Two</h2>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt
-							pariatur voluptatem sunt quam eaque, vel, non in id dolore
-							voluptates quos eligendi labore.</p>
-					</div>
-					<div class="card-footer">
-						<a href="#" class="btn btn-primary btn-sm">More Info</a>
-					</div>
-				</div>
-			</div>
-			<!-- /.col-md-4 -->
-			<div class="col-md-4 mb-5">
-				<div class="card h-100">
-					<div class="card-body">
-						<h2 class="card-title">Card Three</h2>
-						<p class="card-text">Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit. Rem magni quas ex numquam, maxime minus quam
-							molestias corporis quod, ea minima accusamus.</p>
-					</div>
-					<div class="card-footer">
-						<a href="#" class="btn btn-primary btn-sm">More Info</a>
-					</div>
-				</div>
-			</div>
-			<!-- /.col-md-4 -->
-
-		</div>
-		<!-- /.row -->
-
 	</div>
-	<!-- /.container -->
+</div>
 
+<hr>
 </body>
 
 </html>
